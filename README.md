@@ -1,4 +1,4 @@
-<p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/xslt-injection/main/xslt-injection.png"></p>
+<p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/xpath-injection/main/xpath-injection.png"></p>
 
 A threat actor may alter the XML path language (XPath) query to read data on the target (This is more dangerous than SQL injection because it may allow querying the whole database - XML document)
 
