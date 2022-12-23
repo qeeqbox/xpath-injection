@@ -31,7 +31,6 @@ String xpath_query = "//user[name/text()='" + get("name") + "' And pass/text()='
 name: test
 pass: P@ssw0rd!01
 
-
 //String xpath_query = "//user[name/text()='test' And pass/text()='P@ssw0rd!01']";
 ```
 
