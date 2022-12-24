@@ -9,7 +9,7 @@ A threat actor may alter the XML path language (XPath) query to read data on the
 2. The target parses the malicious query (that contains expressions called a locator) and returns data from the database (XML document)
 
 ## Code
-#### Target logic
+#### Target-logic (db)
 ```xml
 <users>
   <user>
@@ -19,24 +19,11 @@ A threat actor may alter the XML path language (XPath) query to read data on the
 </users>
 ```
 
+#### Target-logic
 ```c#
-# Code
 ...
 String xpath_query = "//user[name/text()='" + get("name") + "' And pass/text()='" + get("pass") + "']";
 ...
-```
-
-#### Target-in
-```
-name: test
-pass: P@ssw0rd!01
-
-//String xpath_query = "//user[name/text()='test' And pass/text()='P@ssw0rd!01']";
-```
-
-#### Target-Out
-```
-Welcome, test!
 ```
 
 #### Target-in
