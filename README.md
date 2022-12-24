@@ -10,16 +10,16 @@ A threat actor may alter the XML path language (XPath) query to read data on the
 
 ## Code
 #### Target logic
-```
-# database (XML document)
+```xml
 <users>
-	<user>
-		<name>test</name>
-		<pass>P@ssw0rd!01</pass>
-	</user>
+  <user>
+    <name>test</name>
+    <pass>P@ssw0rd!01</pass>
+  </user>
 </users>
+```
 
-
+```c#
 # Code
 ...
 String xpath_query = "//user[name/text()='" + get("name") + "' And pass/text()='" + get("pass") + "']";
@@ -36,7 +36,7 @@ pass: P@ssw0rd!01
 
 #### Target-Out
 ```
-Welcome test
+Welcome, test!
 ```
 
 #### Target-in
@@ -49,7 +49,7 @@ pass: 0
 
 #### Target-Out
 ```
-Welcome test
+Welcome, test!
 ```
 
 ## Impact
