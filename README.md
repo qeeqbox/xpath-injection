@@ -29,7 +29,7 @@ XPath (XML Path Language) is utilized to navigate and query XML documents. For i
 - Keep XML Libraries Updated: Use supported versions of XML processing libraries and regularly apply security updates to reduce vulnerability to known issues.
 - Perform Security Testing: Conduct code reviews and security testing to identify unsafe XPath construction and ensure that user input cannot alter the intended query logic.
 
-## XML Injection Example
+## XPath Injection Example
 Clone this current repo recursively
 ```sh
 git clone --recurse-submodules https://github.com/qeeqbox/xpath-injection
